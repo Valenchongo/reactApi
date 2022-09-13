@@ -13,11 +13,19 @@ const personaje_particualar = async (id,state)=>{
 
 const siguiente = (state,pag) =>{
     if (pag<42){
+        if(isNaN(pag)){
+            pag=1
+            pag++
+            state(pag)   
+            console.log(pag)
+            window.location.href =`/${pag}`
+        }else{
     pag++
     state(pag)   
     console.log(pag)
     window.location.href =`/${pag}`;
 }    
+}
 }
 
 const atras = (state,pag) =>{
