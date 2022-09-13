@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
     <header> <div className="logo"> <img className="logo" src={Logo}  /></div></header>
      <Routes>
-      <Route path="/:pagina/reactApi" element={<Inicio></Inicio>}> </Route>
+      <Route path="/:pagina" element={<Inicio></Inicio>}> </Route>
    
       <Route path="/personajes/:id/:page" element={<Personaje></Personaje>}> </Route>
      </Routes>
